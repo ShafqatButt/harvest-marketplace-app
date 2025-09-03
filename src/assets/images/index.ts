@@ -1,45 +1,14 @@
-const logo = require("./logo.png");
-const dailyOpPoster = require("./dailyOpPoster.png");
-const farmPoster = require("./farmPoster.png");
-const marketPoster = require("./marketPoster.png");
-const lines = require("./lines.png");
-const sugarcane = require("./sugarcane.jpg");
-const farmMarkingPoster = require("./farmMarkingPoster.png");
-const rice = require("./rice.jpg");
-const wheat = require("./wheat.jpg");
-const corn = require("./corn.jpg");
-const cotton = require("./cotton.jpg");
-const potato = require("./potato.jpg");
-const accountSuccessPoster = require("./accountSuccessPoster.jpeg");
-const gift = require("./gift.png");
-const noTransactionImage = require("./noTransactionImage.png");
-const circleChart = require("./circleChart.png");
-const decorative = require("./decorative.png");
-const mobileCard = require("./mobileCard.png");
-const successfullIcon = require("./successfullIcon.png");
-const location = require("./location.png");
-const headerLogo = require("./headerLogo.png");
+const onboarding_1 = require("./onboarding_1.png");
+const onboarding_2 = require("./onboarding_2.png");
+const onboarding_3 = require("./onboarding_3.png");
+const onboarding_4 = require("./onboarding_4.png");
+const onboardingLogo = require("./onboardingLogo.png");
+
 
 export {
-  corn,
-  cotton,
-  potato,
-  farmMarkingPoster,
-  sugarcane,
-  logo,
-  dailyOpPoster,
-  farmPoster,
-  marketPoster,
-  lines,
-  rice,
-  wheat,
-  accountSuccessPoster,
-  gift,
-  noTransactionImage,
-  circleChart,
-  decorative,
-  mobileCard,
-  successfullIcon,
-  location,
-  headerLogo
+  onboarding_1,
+  onboarding_2,
+  onboarding_3,
+  onboarding_4,
+  onboardingLogo
 };
