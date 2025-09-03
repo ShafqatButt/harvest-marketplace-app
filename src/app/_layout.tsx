@@ -1,53 +1,48 @@
-import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import "react-native-reanimated";
+import "react-native-gesture-handler";
+import { LogBox, StatusBar } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { GST } from "../theme/globalStyles";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { PersistGate } from "redux-persist/integration/react";
+import { persistor, store } from "../redux/store";
+import { Provider } from "react-redux";
+import { Host } from "react-native-portalize";
+import { COLORS } from "../theme/colors";
 
-export {
-  // Catch any errors thrown by the Layout component.
-  ErrorBoundary,
-} from "expo-router";
-
-export const unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: "(tabs)",
-};
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const [loaded] = useFonts({
-    ExtraBold: require("../assets/fonts/Urbanist-ExtraBold.ttf"),
-    Bold: require("../assets/fonts/Urbanist-Bold.ttf"),
-    SemiBold: require("../assets/fonts/Urbanist-SemiBold.ttf"),
-    Medium: require("../assets/fonts/Urbanist-Medium.ttf"),
-    Regular: require("../assets/fonts/Urbanist-Regular.ttf"),
-    Italic: require("../assets/fonts/Urbanist-Italic.ttf"),
-    Light: require("../assets/fonts/Urbanist-Light.ttf"),
-  });
-
-  // Expo Router uses Error Boundaries to catch errors in the navigation tree.
-
   useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
+    LogBox.ignoreAllLogs();
+  }, []);
 
-  if (!loaded) {
-    return null;
-  }
-
-  return <RootLayoutNav />;
-}
-
-function RootLayoutNav() {
   return (
-    <Stack>
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-    </Stack>
+    <GestureHandlerRootView style={GST.FLEX}>
+      <SafeAreaProvider>
+        <Provider store={store}>
+          <PersistGate persistor={persistor}>
+            <Host>
+              <StatusBar
+                backgroundColor={COLORS.WHITE}
+                barStyle={"dark-content"}
+              />
+              <Stack screenOptions={{ headerShown: false, animation: "none" }}>
+                <Stack.Screen name="index" />
+                <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+                <Stack.Screen
+                  name="onBoarding/index"
+                  options={{ headerShown: false }}
+                />
+              </Stack>
+            </Host>
+          </PersistGate>
+        </Provider>
+      </SafeAreaProvider>
+    </GestureHandlerRootView>
   );
 }
