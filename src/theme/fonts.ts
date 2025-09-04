@@ -6,6 +6,13 @@ export const FONTS = {
   REGULAR: 'Urbanist-Regular',
   ITALIC: 'Urbanist-Italic',
   LIGHT: 'Urbanist-Light',
+  Mont_ExtraBold: "Montserrat-ExtraBold",
+  Mont_Bold: "Montserrat-Bold",
+  Mont_SemiBold: "Montserrat-SemiBold",
+  Mont_Medium: "Montserrat-Medium",
+  Mont_Regular: "Montserrat-Regular",
+  Mont_Light: "Montserrat-Light",
+  Mont_Thin: "Montserrat-Thin",
 };
 
 export const FONT_SIZES = {

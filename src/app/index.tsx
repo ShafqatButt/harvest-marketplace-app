@@ -12,6 +12,13 @@ const Main = () => {
     Regular: require("../assets/fonts/Urbanist-Regular.ttf"),
     Italic: require("../assets/fonts/Urbanist-Italic.ttf"),
     Light: require("../assets/fonts/Urbanist-Light.ttf"),
+    Montserrat_ExtraBold: require("../assets/fonts/Montserrat-ExtraBold.ttf"),
+    Montserrat_Bold: require("../assets/fonts/Montserrat-Bold.ttf"),
+    Montserrat_SemiBold: require("../assets/fonts/Montserrat-SemiBold.ttf"),
+    Montserrat_Medium: require("../assets/fonts/Montserrat-Medium.ttf"),
+    Montserrat_Regular: require("../assets/fonts/Montserrat-Regular.ttf"),
+    Montserrat_Light: require("../assets/fonts/Montserrat-Light.ttf"),
+    Montserrat_Thin: require("../assets/fonts/Montserrat-Thin.ttf"),
   });
 
   useEffect(() => {

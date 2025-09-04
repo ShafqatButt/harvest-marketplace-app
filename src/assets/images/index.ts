@@ -3,6 +3,8 @@ const onboarding_2 = require("./onboarding_2.png");
 const onboarding_3 = require("./onboarding_3.png");
 const onboarding_4 = require("./onboarding_4.png");
 const onboardingLogo = require("./onboardingLogo.png");
+const slide = require("./slide.png");
+const sliderPic = require("./sliderPic.png");
 
 
 export {
@@ -10,5 +12,7 @@ export {
   onboarding_2,
   onboarding_3,
   onboarding_4,
-  onboardingLogo
+  onboardingLogo,
+  slide,
+  sliderPic
 };
