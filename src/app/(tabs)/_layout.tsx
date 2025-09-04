@@ -7,6 +7,7 @@ import AppText from "@/src/components/appText";
 import { GST } from "@/src/theme/globalStyles";
 import { COLORS } from "@/src/theme/colors";
 import { Source } from "react-native-fast-image";
+import { cart, explore, home, profile } from "@/src/assets/icons";
 
 export default function TabLayout() {
   return (
@@ -22,18 +23,27 @@ export default function TabLayout() {
           name="home"
           options={{
             title: "Home",
+            tabBarIcon: (props) => (
+              <TabBarIcon {...props} icon={home} label={"Home"} />
+            ),
           }}
         />
         <Tabs.Screen
           name="explore"
           options={{
             title: "Explore",
+            tabBarIcon: (props) => (
+              <TabBarIcon {...props} icon={explore} label={"Explore"} />
+            ),
           }}
         />
         <Tabs.Screen
           name="cart"
           options={{
             title: "Cart",
+            tabBarIcon: (props) => (
+              <TabBarIcon {...props} icon={cart} label={"Cart"} />
+            ),
           }}
         />
 
@@ -41,6 +51,9 @@ export default function TabLayout() {
           name="profile"
           options={{
             title: "Profile",
+            tabBarIcon: (props) => (
+              <TabBarIcon {...props} icon={profile} label={"Profile"} />
+            ),
           }}
         />
       </Tabs>
@@ -57,19 +70,14 @@ const TabBarIcon = ({
   icon: Source;
   label: string;
 }) => (
-  <View
-    style={[
-      styles.tabBarIcon,
-      { backgroundColor: focused ? COLORS.GREEN_300 : COLORS.GREEN_100 },
-    ]}
-  >
+  <View style={[styles.tabBarIcon]}>
     <AppIcon
       path={icon}
-      size={32}
-      tintColor={focused ? "WHITE" : "GRAY_400"}
+      size={24}
+      tintColor={focused ? "GREEN_80" : "SPANISH_GRAY"}
       containerStyle={GST.MB0_5}
     />
-    <AppText size={"XS"} color={focused ? "WHITE" : "BLACK_800"}>
+    <AppText size={"XS"} color={focused ? "GREEN_80" : "SPANISH_GRAY"}>
       {label}
     </AppText>
   </View>
@@ -78,7 +86,14 @@ const styles = StyleSheet.create({
   tabBar: {
     borderTopRightRadius: RF(16),
     borderTopLeftRadius: RF(16),
-    height: RF(100),
+    height: RF(80),
+    alignItems: "center",
+    justifyContent: "center",
   },
-  tabBarIcon: {},
+  tabBarIcon: {
+    alignItems: "center",
+    justifyContent: "center",
+    minWidth: RF(70),
+    marginTop: RF(20),
+  },
 });
