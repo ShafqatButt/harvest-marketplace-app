@@ -2,6 +2,7 @@ import { useFonts } from "expo-font";
 import { Redirect, SplashScreen } from "expo-router";
 import React, { useEffect } from "react";
 import { LogBox } from "react-native";
+import { FONTS } from "../theme/fonts";
 
 const Main = () => {
   const [loaded] = useFonts({

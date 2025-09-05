@@ -1,8 +1,10 @@
+import Main from "@/src/app";
 import { COLORS, ColorType } from "@/src/theme/colors";
 import { FONTS, FONT_SIZES } from "@/src/theme/fonts";
 import { GST } from "@/src/theme/globalStyles";
 import { RF } from "@/src/theme/responsive";
 import { FontSizeType, FontType } from "@/src/types";
+import { useFonts } from "expo-font";
 import React from "react";
 import { Text, TextProps, View } from "react-native";
 
