@@ -155,6 +155,9 @@ export const SPACING = StyleSheet.create({
   MX7: {
     marginHorizontal: RF(28),
   },
+  ML8: {
+    marginLeft: RF(32),
+  },
   MT8: {
     marginTop: RF(32),
   },
@@ -167,6 +170,9 @@ export const SPACING = StyleSheet.create({
   MX8: {
     marginHorizontal: RF(32),
   },
+  ML9: {
+    marginLeft: RF(36),
+  },
   MB9: {
     marginBottom: RF(36),
   },
@@ -176,38 +182,71 @@ export const SPACING = StyleSheet.create({
   MY9: {
     marginVertical: RF(36),
   },
+  ML10: {
+    marginLeft: RF(40),
+  },
   MB10: {
     marginBottom: RF(40),
   },
   MT10: {
     marginTop: RF(40),
   },
+  ML11: {
+    marginLeft: RF(44),
+  },
   MT11: {
     marginTop: RF(44),
+  },
+  ML12: {
+    marginLeft: RF(48),
   },
   MT12: {
     marginTop: RF(48),
   },
+  ML13: {
+    marginLeft: RF(52),
+  },
   MT13: {
     marginTop: RF(52),
+  },
+  ML14: {
+    marginLeft: RF(56),
   },
   MT14: {
     marginTop: RF(56),
   },
+  ML15: {
+    marginLeft: RF(60),
+  },
   MT15: {
     marginTop: RF(60),
+  },
+  ML156: {
+    marginLeft: RF(64),
   },
   MT16: {
     marginTop: RF(64),
   },
+  ML17: {
+    marginLeft: RF(68),
+  },
   MT17: {
     marginTop: RF(68),
+  },
+  ML18: {
+    marginLeft: RF(72),
   },
   MT18: {
     marginTop: RF(72),
   },
+  ML19: {
+    marginLeft: RF(76),
+  },
   MT19: {
     marginTop: RF(76),
+  },
+  ML20: {
+    marginLeft: RF(80),
   },
   MY10: {
     marginVertical: RF(40),

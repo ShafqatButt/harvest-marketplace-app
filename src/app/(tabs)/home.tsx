@@ -34,7 +34,7 @@ const Home = () => {
     {
       backgroundImage: slide,
       text_1: "Are you a",
-      buttonText_1: "Farmer",
+      buttonText_1: "Farmer ?",
       text_2: "Sell your",
       text_3: "Products here",
       TAndC: "T & C Apply",
@@ -44,7 +44,7 @@ const Home = () => {
     {
       backgroundImage: slide,
       text_1: "Are you a",
-      buttonText_1: "Farmer",
+      buttonText_1: "Farmer ?",
       text_2: "Sell your",
       text_3: "Products here",
       TAndC: "T & C Apply",
@@ -54,7 +54,7 @@ const Home = () => {
     {
       backgroundImage: slide,
       text_1: "Are you a",
-      buttonText_1: "Farmer",
+      buttonText_1: "Farmer ?",
       text_2: "Sell your",
       text_3: "Products here",
       TAndC: "T & C Apply",
@@ -64,7 +64,7 @@ const Home = () => {
     {
       backgroundImage: slide,
       text_1: "Are you a",
-      buttonText_1: "Farmer",
+      buttonText_1: "Farmer ?",
       text_2: "Sell your",
       text_3: "Products here",
       TAndC: "T & C Apply",
